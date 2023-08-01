@@ -1,10 +1,10 @@
 function output(){
     document.getElementById('output').innerHTML=''
-let start=document.getElementById('startnumber').value;
-let end=document.getElementById('endnumber').value;
-let table=document.getElementById('tablenumber').value;
+let start= parseInt(document.getElementById('startnumber').value);
+let end=parseInt(document.getElementById('endnumber').value);
+let table=parseInt(document.getElementById('tablenumber').value);
 
-for (let x = start; x <= end; x++)
+for (let x =  start ; x <= end; x++)
 {document.getElementById('output').innerHTML+=
 table + "x"+ x+ "=" + table*x + "<br>"}
 }
